@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #333;
+}
+section {
+  background-color: white;
+  width: 95%;
+  height: 780px;
+  font-family: "Lucida Sans";
+  margin: 20px auto;
+  border-radius: 14px;
+}
+nav {
+  background-color: #3f3d56;
+  /* width: 220px; */
+  width: 5%;
+  height: 100%;
+  float: left;
+  transition: 0.3s ease-in-out;
+  position: absolute;
+}
+
+ul {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+ul li {
+  list-style: none;
+}
+nav ul li {
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+}
+li a {
+    text-decoration: none;
+    color: white;
+}
+input.checkbox-nav:checked ~ nav{
+    width: 20%;
+}
+input.checkbox-nav:checked ~ label .fa-times{
+display: inline-block;
+}
+input.checkbox-nav:checked ~ label .far-bars{
+display: none;
+}
+input.checkbox-nav:checked ~ label .toggle-nav{
+  left: 21%
+}
+input.checkbox-nav:checked ~ nav li span{
+  display: inline-block;
+}
+.toggle-nav{
+  position: absolute;
+  left: 6%;
+  top: 8px;
+  transition: 0.5s;
+cursor: pointer;
+}
+label .fa-times{
+  display: none;
+}
+ul {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+input {
+  display: none;
+  width: 74px;
+  height: 47px;
+}
